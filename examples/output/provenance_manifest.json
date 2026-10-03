@@ -1,0 +1,155 @@
+{
+  "code": {
+    "files": {
+      "__init__.py": "a93c42cc68599c219cd7511512d25bf5488d26a14896310b5807e5fb9f2b6357",
+      "__main__.py": "dfe6c506ed7ba7f7db12d747d63d488efe9e9fbae6a005681c005f56f6006633",
+      "_deps.py": "b13191e633d13d9e3ade899482afa629e721abd6e16b939ae02722828020189d",
+      "cli.py": "26dbd427dc992de3686f92395771ae696263c5816879422a5841e503379699d9",
+      "integrations/__init__.py": "e7a05cd0a0c47294ffa0e5498079064c0b23a17f976a3480d5a03a0339ea7461",
+      "integrations/oes_adapter.py": "8432871be74e217637ccef6ea31db270427c4aa9540aa400d866295cb56310ad",
+      "provenance/__init__.py": "9e93ad76f5213ce8a1e5e6e0d609c3d0c968d79721d413e5a74c8b99d0230b5b",
+      "provenance/evidence_report.py": "a62d4778528a89973b1d7b8c8bfe6348990607e8ced48a75006be1f1ecd1f59e",
+      "provenance/manifest.py": "c79556347a4124a12bca1988b246a157e614303c5ad7078b1a28d93ef140615b",
+      "replay.py": "79f6f0ca9cadd351a988becd150dac7bba146022954f034c135a9216946e1e5d",
+      "scenarios/__init__.py": "814aa109e7ae4c3eb9a3d01e6347ab78cab707573cede22e794d593d930a69df",
+      "scenarios/catalog.py": "066b1a75e375f51afebe4092d977d3d1c464861cc096784cf94c280a0253bce0",
+      "scenarios/route.py": "e3ae4a0824c87eec717836f6fdbf25ca26f28baa2198a06352ee57d2b5818a0c",
+      "scenarios/simulate.py": "23a5777c01852bf4cef78b9460d2640b3549cb5240203b3956f37a4b2afe9569"
+    },
+    "package_tree_sha256": "0fdf13100c69b1edfebdc517661a36cdebe443b81d35b4bd477fbbe07f007073"
+  },
+  "code_version": "0.1.0",
+  "config": {
+    "compass_sigma_deg": 1.0,
+    "dt": 1.0,
+    "epochs": 900,
+    "extra": {},
+    "filter_gain": 0.25,
+    "gnss_cn0_nominal": 45.0,
+    "gnss_cn0_sigma": 0.8,
+    "gnss_pos_sigma_m": 2.0,
+    "gnss_sats_nominal": 10,
+    "gnss_vel_sigma_mps": 0.08,
+    "inertial_profile": "classical_dr",
+    "innovation_gate_m": 30.0,
+    "reset_after_rejections": 10,
+    "seed": 42,
+    "speed_log_sigma_mps": 0.08,
+    "tau": 0.5,
+    "window": 32
+  },
+  "config_sha256": "a37881b56eda21f597c42ced9f4c438351f7ac61ddc31c88b024e6dd7f7328cc",
+  "dependency": {
+    "commit": "d402c09cfdd3282262efc3cecc290905623ad98d",
+    "files_sha256": {
+      "__init__.py": "761b07f5d9aca53a3e3b78383e343db7e306acbc57b51131c67209302bf67d53",
+      "api.py": "34b1975bc04155e901b7c5ac36ad4d4e5bd5b2a0d951dda8a5255b687de6a9f6",
+      "scoring.py": "b853aaa4283ea56d911032be17196c8540a2e5ece7104d899da6520dbe8a2cd2",
+      "validation.py": "a661ca9e8a1a72931c1e6d7737ee7f9be6870d7e119c20acf017f72162071f8d"
+    },
+    "modified": false,
+    "name": "pilottrace",
+    "repository": "https://github.com/sparkainlp-x/pilottrace",
+    "version": "0.1.0"
+  },
+  "evidence_tag": "SYNTHETIC",
+  "manifest_schema_version": 1,
+  "note": "Deterministic: no timestamps or host data. Regenerate with `python -m pilottrace_nav run`.",
+  "outputs": {
+    "evidence_report.json": {
+      "bytes": 27528,
+      "sha256": "03270fe2dd1914ba37b22cde94663006c1572d1ef42c8748764a0e1647babbc8"
+    },
+    "evidence_report.md": {
+      "bytes": 5567,
+      "sha256": "c2043483114a9abdecbec928a1eed12a3f751adcbb65ac40583190daa32d757e"
+    },
+    "traces/inertial_drift_pilottrace_manifest.json": {
+      "bytes": 1046,
+      "sha256": "d85cc918b9412eab01c7b3d038490ae1a1f88ac6c49e385b269197c5caac4d5b"
+    },
+    "traces/inertial_drift_pilottrace_report.json": {
+      "bytes": 3131462,
+      "sha256": "bde57d2be41edde091aad146245941e84c1ab993fb4234c1c2adeeb6b67ee888"
+    },
+    "traces/inertial_drift_trace.json": {
+      "bytes": 3437814,
+      "sha256": "51db148d9d536215f7c0133c62f8eb2ec872891ad7706ce799e58815f4209499"
+    },
+    "traces/jamming_pilottrace_manifest.json": {
+      "bytes": 1039,
+      "sha256": "603bce012838c05cb11508903afac9da3288751ab59c9c81ef79a56548988bbb"
+    },
+    "traces/jamming_pilottrace_report.json": {
+      "bytes": 3237235,
+      "sha256": "92b9fdc40c8d0a2885cf49428937281739ae2466cb4d792ae75c4623a15e869d"
+    },
+    "traces/jamming_trace.json": {
+      "bytes": 3384947,
+      "sha256": "aa5bd80b25d100735fd00b849ac7d5a0441316b5c9a17a3c51ec768f27056893"
+    },
+    "traces/nominal_pilottrace_manifest.json": {
+      "bytes": 1039,
+      "sha256": "8172f9ba9e272de8b67e9746e302ec60ea58300d2790411ae5320d3ffaef1a3c"
+    },
+    "traces/nominal_pilottrace_report.json": {
+      "bytes": 2933712,
+      "sha256": "bd2e651620f6ee0d04a8e387b137e99bf5724646eaa32c93da0a519fd0dfc9cc"
+    },
+    "traces/nominal_trace.json": {
+      "bytes": 3441062,
+      "sha256": "fda97fab08f3769f89695430f815a0a5571f23897fcc260c7042d0809b10d6cb"
+    },
+    "traces/sensor_dropouts_pilottrace_manifest.json": {
+      "bytes": 1047,
+      "sha256": "77b10d6af2220ebfd2326b44c76688e25f0326031fb375801726cec6ae2903b6"
+    },
+    "traces/sensor_dropouts_pilottrace_report.json": {
+      "bytes": 2972053,
+      "sha256": "74bd57a0ae7da457053d3c65de6c6cee19975acf4b3a6c93f74cc9827ef5088e"
+    },
+    "traces/sensor_dropouts_trace.json": {
+      "bytes": 3421761,
+      "sha256": "c03726cf52ccf1b48565eceb8e4861faf12df5f9267dde155d36f991c6dfa7b4"
+    },
+    "traces/spoof_ramp_pilottrace_manifest.json": {
+      "bytes": 1042,
+      "sha256": "17b45647a1cc5a84cbbd51e2bacfb98bad159e9bb894a445ed9ac8800cf75408"
+    },
+    "traces/spoof_ramp_pilottrace_report.json": {
+      "bytes": 2949570,
+      "sha256": "7bbad79aa284d35869b6ef76d368ec2c278177a296bc8718a65e0c3a48a36e63"
+    },
+    "traces/spoof_ramp_trace.json": {
+      "bytes": 3435003,
+      "sha256": "a508268e9d12b01433e5cc8e01316c996606895e8327b5f891f1442e0fbe3525"
+    },
+    "traces/spoof_step_pilottrace_manifest.json": {
+      "bytes": 1042,
+      "sha256": "d58f25032deb7c6f53e5a697b346a74964d5d9a50cef8c4957119d80f9750b9e"
+    },
+    "traces/spoof_step_pilottrace_report.json": {
+      "bytes": 2966414,
+      "sha256": "317139ace01e6ad90d8fa9bad3f626243f039ef1d4a4f25365b2d61dd8b79090"
+    },
+    "traces/spoof_step_trace.json": {
+      "bytes": 3440657,
+      "sha256": "dda8a7b0311d6ca107defcad43f8508fc2c734d0fbd0d10ac63be2b0728f2487"
+    },
+    "traces/total_dropout_pilottrace_manifest.json": {
+      "bytes": 1045,
+      "sha256": "18a6aac9b67dda053a2a8560bcc56a88d7d58066ea3638c274dad6cd4f61f20a"
+    },
+    "traces/total_dropout_pilottrace_report.json": {
+      "bytes": 2986218,
+      "sha256": "30ecfd9b1940f35f2903dcf58adc58334dd847a1ad79f27ae203a806b318974b"
+    },
+    "traces/total_dropout_trace.json": {
+      "bytes": 2954043,
+      "sha256": "e8ee212978d2569b7df299fcf89e7bf0725abc77a84b260e92fe8f0329bb683b"
+    }
+  },
+  "project": "pilottrace-nav-replay",
+  "scenarios_sha256": "80fce04ccf9fe311aeece7fb3d3c895534fcbb3788f9e0274fd613572c4f8438",
+  "seed": 42
+}

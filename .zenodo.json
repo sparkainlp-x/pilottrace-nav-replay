@@ -1,0 +1,34 @@
+{
+  "upload_type": "software",
+  "title": "PilotTrace Quantum Navigation Replay Pack",
+  "version": "0.1.0",
+  "description": "<p>Deterministic, fully synthetic software replay of GNSS-denied maritime navigation (seed 42): nominal GNSS, total dropout, jamming-like noise, spoofing offsets, inertial drift and sensor dropouts with labelled degradation events. Navigation residuals are mapped explicitly into 16&times;32 OES-512 frames and scored through the unmodified pilottrace package with the latch S = 0.45&middot;Peak + 0.35&middot;RMS + 0.20&middot;MeanAbs &ge; 0.50, fail-closed on NaN, infinity and bad shapes, with a hash-based provenance manifest and evidence report.</p><p>Measured on the synthetic scenarios: dropouts, jamming and missing sensors latch immediately with no alarms on the nominal run, while a slow self-consistent spoof is not detected while active.</p><p><strong>Boundaries.</strong> Synthetic data only. No physical quantum sensor or other hardware. Quantum advantage, calibration and operational validation are NOT established. Not a navigation, integrity or safety system.</p>",
+  "creators": [
+    {
+      "name": "Brisson, Jean-François",
+      "affiliation": "Spark AI NLP",
+      "orcid": "0009-0000-9778-5374"
+    }
+  ],
+  "access_right": "open",
+  "license": "AGPL-3.0-only",
+  "keywords": [
+    "navigation",
+    "GNSS-denied",
+    "maritime",
+    "replay",
+    "synthetic data",
+    "provenance",
+    "pilottrace",
+    "OES-32",
+    "research software"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sparkainlp-x/pilottrace",
+      "relation": "references",
+      "resource_type": "software"
+    }
+  ],
+  "language": "eng"
+}

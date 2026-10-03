@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pilottrace-nav-replay"
+version = "0.1.0"
+description = "PilotTrace Quantum Navigation Replay Pack: deterministic SYNTHETIC GNSS-denied maritime navigation replay scored through pilottrace (no physical quantum sensor; not a navigation system)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+authors = [{ name = "Jean-François Brisson", email = "281253927+sparkainlp-x@users.noreply.github.com" }]
+keywords = ["navigation", "gnss", "replay", "synthetic-data", "provenance", "pilottrace", "oes-32"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = []  # pilottrace is pinned by commit and hash-checked at runtime; see README
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-cov>=5"]
+
+[project.scripts]
+pilottrace-nav-replay = "pilottrace_nav.cli:main"
+
+[project.urls]
+Repository = "https://github.com/sparkainlp-x/pilottrace-nav-replay"
+
+[tool.setuptools.packages.find]
+include = ["pilottrace_nav*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["pilottrace_nav"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 95
+show_missing = true
