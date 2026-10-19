@@ -12,4 +12,4 @@ All notable changes are documented here. The format follows [Keep a Changelog](h
 - `integrations/oes_adapter.py`: an explicit 16 × 32 mapping, the classical `R = max|x − x_ref|`, the latch `S = 0.45·Peak + 0.35·RMS + 0.20·MeanAbs ≥ τ` (default 0.50), and fail-closed validation.
 - Scoring through the unmodified, hash-pinned `pilottrace` package, cross-checked frame by frame against the adapter.
 - `provenance/manifest.py` (hashes of config, code, dependency, seed and outputs; `verify`) and `provenance/evidence_report.py` (JSON and Markdown).
-- CLI (`pilottrace-nav-replay list|run|verify`), `examples/quantum_navigation_replay.py`, 92 tests, CI on Python 3.10–3.13, Dependabot, and the community files.
+- CLI (`pilottrace-nav-replay list|run|verify`), `examples/navigation_replay.py`, 92 tests, CI on Python 3.10–3.13, Dependabot, and the community files.

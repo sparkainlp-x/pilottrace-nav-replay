@@ -2,7 +2,7 @@
 """Scenario catalogue: configuration, inertial parameter profiles and labelled degradation events.
 
 All values are SYNTHETIC modelling assumptions chosen for a readable software replay. None is a
-measurement of a real receiver, inertial unit, quantum sensor, vessel or jammer.
+measurement of a real receiver, inertial unit, vessel or jammer.
 """
 
 from __future__ import annotations
@@ -44,9 +44,9 @@ INERTIAL_PROFILES: dict[str, InertialProfile] = {
         gyro_bias_dps=0.00002,
         gyro_noise_dps=0.001,
         note=(
-            "Hypothetical low-drift parameter set (bias 0.072 deg/h), standing in for what a future "
-            "quantum-inertial sensor is hoped to offer. TARGET-style assumption, not a measurement of "
-            "any device; no quantum sensor is modelled physically and no advantage is established."
+            "Hypothetical low-drift parameter set (bias 0.072 deg/h), standing in for a future "
+            "low-drift inertial sensor. TARGET-style assumption, not a measurement of any device; "
+            "no sensor is modelled physically and no benefit is established."
         ),
     ),
 }

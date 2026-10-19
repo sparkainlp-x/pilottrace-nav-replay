@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata from this file."
-title: "PilotTrace Quantum Navigation Replay Pack"
+title: "PilotTrace Navigation Replay Pack"
 type: software
 authors:
   - family-names: "Brisson"
@@ -20,8 +20,8 @@ abstract: >-
   scored through the unmodified pilottrace package with the latch
   S = 0.45 Peak + 0.35 RMS + 0.20 MeanAbs >= 0.50 (fail-closed on NaN, inf
   and bad shapes), and recorded in a hash-based provenance manifest and
-  evidence report. Synthetic data only; no physical quantum sensor; quantum
-  advantage, calibration and operational validation are not established.
+  evidence report. Synthetic data only; no physical sensor; no sensor benefit,
+  calibration or fitness for operational use is established.
 keywords:
   - navigation
   - gnss-denied

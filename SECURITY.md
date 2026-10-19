@@ -1,6 +1,6 @@
 # Security policy
 
-PilotTrace Quantum Navigation Replay Pack is research software that runs on synthetic data only. It processes no personal data, opens no network connections at runtime, and reads and writes files only under the output directory you choose. It imports the `pilottrace` package from your import path or from `.deps/pilottrace`, and refuses to run if pilottrace's source files do not match the pinned SHA-256 hashes.
+PilotTrace Navigation Replay Pack is research software that runs on synthetic data only. It processes no personal data, opens no network connections at runtime, and reads and writes files only under the output directory you choose. It imports the `pilottrace` package from your import path or from `.deps/pilottrace`, and refuses to run if pilottrace's source files do not match the pinned SHA-256 hashes.
 
 It is **not** a navigation, integrity-monitoring or safety system. Do not use it to make navigation decisions.
 

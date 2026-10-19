@@ -68,7 +68,7 @@ def test_version_and_module_entry(tmp_path):
 
 
 def test_example_script(tmp_path):
-    script = ROOT / "examples" / "quantum_navigation_replay.py"
+    script = ROOT / "examples" / "navigation_replay.py"
     result = subprocess.run([sys.executable, str(script), str(tmp_path)], capture_output=True, text=True, cwd=ROOT)
     assert result.returncode == 0, result.stderr
     assert "NOT latched during event" in result.stdout and "[SYNTHETIC]" in result.stdout

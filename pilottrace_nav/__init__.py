@@ -1,10 +1,10 @@
 # Copyright (C) 2026 Jean-François Brisson / Spark AI NLP. SPDX-License-Identifier: AGPL-3.0-only
-"""PilotTrace Quantum Navigation Replay Pack.
+"""PilotTrace Navigation Replay Pack.
 
 A deterministic, fully SYNTHETIC software replay of GNSS-denied maritime navigation. Navigation
 residuals are mapped explicitly into 16 x 32 = 512-value frames and scored through the existing
-``pilottrace`` package. No physical sensor (quantum or otherwise) is involved; quantum advantage,
-calibration and operational validation are NOT established.
+``pilottrace`` package. No physical sensor is involved; no sensor benefit, calibration or fitness
+for operational use is established.
 """
 
 __version__ = "0.1.0"

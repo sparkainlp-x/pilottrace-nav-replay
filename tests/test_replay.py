@@ -73,8 +73,9 @@ def test_outputs_and_pilottrace_artifacts(full_run):
 def test_evidence_text_states_boundaries(full_run):
     md = (full_run[0] / "evidence_report.md").read_text()
     assert "Every number in this report is SYNTHETIC" in md
-    assert "Quantum advantage is NOT established" in md
-    assert "No physical quantum sensor" in md
+    assert "No sensor benefit, calibration or fitness for operational use is established" in md
+    assert "No physical sensor or other hardware is involved" in md
+    assert "quantum" not in md.lower()
 
 
 def test_run_subset_and_validation(tmp_path):

@@ -10,4 +10,4 @@ labels: enhancement
 
 **Evidence tags:** which numbers would be SYNTHETIC, REPORTED, TARGET or UNRUN?
 
-**Boundaries:** confirm the proposal makes no physical-sensor, quantum-advantage, calibration or operational claim.
+**Boundaries:** confirm the proposal makes no physical-sensor, sensor-benefit, calibration or operational claim.

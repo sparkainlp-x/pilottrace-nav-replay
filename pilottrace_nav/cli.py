@@ -24,7 +24,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="pilottrace-nav-replay",
         description="Deterministic SYNTHETIC GNSS-denied maritime navigation replay, scored through pilottrace.",
-        epilog="SYNTHETIC data only; no physical quantum sensor; not a navigation or safety system.",
+        epilog="SYNTHETIC data only; no physical sensor; not a navigation or safety system.",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     sub = parser.add_subparsers(dest="command", required=True)

@@ -1,6 +1,6 @@
 # Commercial licensing
 
-PilotTrace Quantum Navigation Replay Pack is Copyright (C) 2026 Jean-François Brisson / Spark AI NLP.
+PilotTrace Navigation Replay Pack is Copyright (C) 2026 Jean-François Brisson / Spark AI NLP.
 
 This software is available under the GNU Affero General Public License v3.0
 only (AGPL-3.0-only); see [LICENSE](LICENSE). Organizations that want to use it

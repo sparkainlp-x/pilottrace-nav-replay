@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pilottrace-nav-replay"
 version = "0.1.0"
-description = "PilotTrace Quantum Navigation Replay Pack: deterministic SYNTHETIC GNSS-denied maritime navigation replay scored through pilottrace (no physical quantum sensor; not a navigation system)"
+description = "PilotTrace Navigation Replay Pack: deterministic SYNTHETIC GNSS-denied maritime navigation replay scored through pilottrace (no physical sensor; not a navigation system)"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "AGPL-3.0-only"

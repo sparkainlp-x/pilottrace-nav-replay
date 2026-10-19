@@ -4,11 +4,11 @@
 
 Usage (from the repository root, with pilottrace available; see README):
 
-    python examples/quantum_navigation_replay.py [OUT_DIR]
+    python examples/navigation_replay.py [OUT_DIR]
 
 The large per-scenario traces and pilottrace reports go to OUT_DIR/traces/ (git-ignored); their hashes
-are recorded in OUT_DIR/provenance_manifest.json. No physical quantum sensor is involved, and quantum
-advantage, calibration and operational validation are NOT established.
+are recorded in OUT_DIR/provenance_manifest.json. No physical sensor is involved, and no sensor benefit,
+calibration or fitness for operational use is established.
 """
 
 from __future__ import annotations
