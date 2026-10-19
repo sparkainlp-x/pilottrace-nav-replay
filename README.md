@@ -160,7 +160,8 @@ CI runs ruff and the tests on Python 3.10–3.13, regenerates the evidence, runs
 
 ## How to cite
 
-See [CITATION.cff](CITATION.cff). A Zenodo DOI will be listed here after the first release: `10.5281/zenodo.XXXXXXX` (placeholder).
+See [CITATION.cff](CITATION.cff). Cite the concept DOI [10.5281/zenodo.23462522](https://doi.org/10.5281/zenodo.23462522) for all versions,
+or the version DOI [10.5281/zenodo.23462523](https://doi.org/10.5281/zenodo.23462523) for v0.1.0.
 
 > Brisson, J.-F. (2026). *PilotTrace Navigation Replay Pack* (Version 0.1.0) [Computer software]. Spark AI NLP, Fredericton, New Brunswick, Canada. https://github.com/sparkainlp-x/pilottrace-nav-replay
 

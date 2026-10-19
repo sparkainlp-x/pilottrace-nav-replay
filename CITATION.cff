@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file. Every number is SYNTHETIC. A Zenodo DOI is added at the first release."
+message: "If you use this software, please cite it using the metadata from this file. Every number is SYNTHETIC."
 title: "PilotTrace Navigation Replay Pack"
 type: software
 authors:
@@ -9,6 +9,14 @@ authors:
     orcid: "https://orcid.org/0009-0000-9778-5374"
 version: "0.1.0"
 date-released: "2026-10-18"
+doi: "10.5281/zenodo.23462522"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23462522"
+    description: "Concept DOI (all versions)"
+  - type: doi
+    value: "10.5281/zenodo.23462523"
+    description: "Version DOI for v0.1.0"
 license: AGPL-3.0-only
 repository-code: "https://github.com/sparkainlp-x/pilottrace-nav-replay"
 url: "https://sparkainlpx.xyz"
