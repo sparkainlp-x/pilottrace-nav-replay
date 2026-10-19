@@ -6,7 +6,7 @@
   "creators": [
     {
       "name": "Brisson, Jean-François",
-      "affiliation": "Spark AI NLP",
+      "affiliation": "Spark AI NLP, Fredericton, New Brunswick, Canada",
       "orcid": "0009-0000-9778-5374"
     }
   ],
@@ -25,10 +25,22 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/sparkainlp-x/pilottrace",
+      "identifier": "https://github.com/sparkainlp-x/pilottrace-nav-replay",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.23187278",
       "relation": "references",
-      "resource_type": "software"
+      "resource_type": "software",
+      "scheme": "doi"
     }
   ],
-  "language": "eng"
+  "language": "eng",
+  "communities": [
+    {
+      "identifier": "spark-ai-nlp"
+    }
+  ]
 }

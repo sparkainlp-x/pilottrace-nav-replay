@@ -1,14 +1,14 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file."
+message: "If you use this software, please cite it using the metadata from this file. Every number is SYNTHETIC. A Zenodo DOI is added at the first release."
 title: "PilotTrace Navigation Replay Pack"
 type: software
 authors:
   - family-names: "Brisson"
     given-names: "Jean-François"
-    affiliation: "Spark AI NLP"
+    affiliation: "Spark AI NLP, Fredericton, New Brunswick, Canada"
     orcid: "https://orcid.org/0009-0000-9778-5374"
 version: "0.1.0"
-date-released: "2026-10-03"
+date-released: "2026-10-18"
 license: AGPL-3.0-only
 repository-code: "https://github.com/sparkainlp-x/pilottrace-nav-replay"
 url: "https://sparkainlpx.xyz"
@@ -40,3 +40,4 @@ references:
         given-names: "Jean-François"
         orcid: "https://orcid.org/0009-0000-9778-5374"
     repository-code: "https://github.com/sparkainlp-x/pilottrace"
+    doi: "10.5281/zenodo.23187278"
