@@ -1,0 +1,5 @@
+# SHA-256 pins of the public pilottrace file api.py (pilottrace_nav/_deps.py and the provenance manifest); checksums, not secrets
+789b2d8d9d6b6ecb62662222e03879eac64661b6:pilottrace_nav/_deps.py:generic-api-key:23
+789b2d8d9d6b6ecb62662222e03879eac64661b6:examples/output/provenance_manifest.json:generic-api-key:46
+examples/output/provenance_manifest.json:generic-api-key:46
+pilottrace_nav/_deps.py:generic-api-key:23
