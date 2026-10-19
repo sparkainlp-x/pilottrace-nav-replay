@@ -43,6 +43,8 @@ jobs:
           for f in evidence_report.json evidence_report.md provenance_manifest.json; do
             cmp "$RUNNER_TEMP/out/$f" "examples/output/$f"
           done
+      - name: Build the Pages view
+        run: python -W error scripts/build_site.py "$RUNNER_TEMP/site"
       - name: Install and run the console script
         run: |
           python -m pip install .

@@ -10,3 +10,4 @@ dist/
 *.egg-info/
 replay-output/
 examples/output/traces/
+_site/
