@@ -42,6 +42,7 @@ target-version = "py310"
 select = ["E", "F", "W", "I", "B", "UP"]
 
 [tool.pytest.ini_options]
+filterwarnings = ["error"]
 testpaths = ["tests"]
 
 [tool.coverage.run]
