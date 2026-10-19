@@ -4,7 +4,7 @@ All notable changes are documented here. The format follows [Keep a Changelog](h
 
 ## [Unreleased]
 
-## [0.1.0] - unreleased (date set when tagged)
+## [0.1.0] - 2026-10-18
 
 ### Changed
 - Retitled from "PilotTrace Quantum Navigation Replay Pack" to "PilotTrace Navigation Replay Pack"; the repository name `pilottrace-nav-replay` is unchanged. `examples/quantum_navigation_replay.py` is now `examples/navigation_replay.py`.
