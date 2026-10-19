@@ -2,6 +2,10 @@
 
 A deterministic, **fully SYNTHETIC** software replay of GNSS-denied maritime navigation. Navigation residuals are mapped explicitly into OES-32 blocks and OES-512 (16 × 32) frames, then scored and evidenced through the existing, unmodified [`sparkainlp-x/pilottrace`](https://github.com/sparkainlp-x/pilottrace) package. Every run writes a hash-chained provenance manifest and an evidence report.
 
+Static view of the committed replay (no JavaScript, no network requests):
+[sparkainlp-x.github.io/pilottrace-nav-replay](https://sparkainlp-x.github.io/pilottrace-nav-replay/). Each
+scenario shows its navigation error, the labelled event windows and the frames pilottrace latched, misses included.
+
 ## Boundaries
 
 Read these first.
@@ -106,7 +110,7 @@ In the 300 s dropout, dead-reckoning error at the end of the dropout is 29.5 m w
 
 ## Install and run
 
-Python 3.10–3.13, standard library only. pilottrace is not a pip package, so it is used from a pinned checkout and hash-verified at runtime; a modified pilottrace is refused with exit code 3.
+Quickstart: Python 3.10–3.13, standard library only. pilottrace is not a pip package, so it is used from a pinned checkout and hash-verified at runtime; a modified pilottrace is refused with exit code 3.
 
 ```bash
 git clone https://github.com/sparkainlp-x/pilottrace .deps/pilottrace
@@ -115,6 +119,7 @@ python -m pilottrace_nav list
 python -m pilottrace_nav run --out-dir replay-output        # all scenarios; or --scenarios nominal,jamming
 python -m pilottrace_nav verify replay-output/provenance_manifest.json
 python examples/navigation_replay.py                 # refreshes examples/output/
+python scripts/build_site.py _site                   # rebuilds the Pages view into _site/index.html
 ```
 
 The per-scenario pilottrace traces and reports (about 3 MB each) go to `<out-dir>/traces/` and are not committed; the manifest records their hashes. **Exit codes:** `0` ok · `1` I/O error · `2` invalid arguments or fail-closed input · `3` pilottrace missing or not the pinned version · `4` verify mismatch.
@@ -123,7 +128,7 @@ The per-scenario pilottrace traces and reports (about 3 MB each) go to `<out-dir
 
 ```bash
 python -m pip install pytest pytest-cov
-python -m pytest --cov        # 92 tests; coverage gate 95%
+python -m pytest --cov        # 97 tests; coverage gate 95%; warnings are errors
 ```
 
 The tests cover:
@@ -139,14 +144,30 @@ The tests cover:
 - CLI exit codes;
 - byte-for-byte reproduction of the committed evidence.
 
-CI runs ruff and the tests on Python 3.10–3.13, regenerates the evidence, and runs `cmp` against the committed copies.
+CI runs ruff and the tests on Python 3.10–3.13, regenerates the evidence, runs `cmp` against the committed copies, and builds the Pages view.
+
+## Limitations
+
+- Every number is SYNTHETIC: invented route, sensors, faults and labels from seed 42. Performance on real data is UNRUN.
+- The estimator is a simple constant-gain toy, and the residual scales are declared, not calibrated.
+- The slow, self-consistent spoof is not detected while active, and the abrupt spoof is caught only until the gate reset accepts it (see Results).
+- The low-drift inertial profile is a parameter assumption, not a model of any device.
+- It is not a navigation system, integrity monitor, alarm or safety function, and is not intended for operational use.
 
 ## Roadmap
 
-- **P2 (not started):** a post-quantum-cryptography (PQC) asset inventory and a web dashboard. They are tracked as issues and are UNRUN.
+- **P2 (not started):** a post-quantum-cryptography (PQC) asset inventory. It is tracked as an issue and is UNRUN.
 
-## Citation and licence
+## How to cite
 
-Citation metadata is in [CITATION.cff](CITATION.cff) and [.zenodo.json](.zenodo.json), with ORCID 0009-0000-9778-5374. This repository is private and has **no release and no DOI**.
+See [CITATION.cff](CITATION.cff). A Zenodo DOI will be listed here after the first release: `10.5281/zenodo.XXXXXXX` (placeholder).
+
+> Brisson, J.-F. (2026). *PilotTrace Navigation Replay Pack* (Version 0.1.0) [Computer software]. Spark AI NLP, Fredericton, New Brunswick, Canada. https://github.com/sparkainlp-x/pilottrace-nav-replay
+
+Please also cite pilottrace, which does the scoring of record: [doi:10.5281/zenodo.23187278](https://doi.org/10.5281/zenodo.23187278).
+
+## License
+
+Copyright (c) 2026 Jean-François Brisson, Spark AI NLP.
 
 The software is available under the GNU Affero General Public License v3.0 only (AGPL-3.0-only); see [LICENSE](LICENSE). This follows pilottrace's licence model. For proprietary use without AGPL obligations, see [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md).
