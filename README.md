@@ -1,9 +1,5 @@
 # PilotTrace Navigation Replay Pack
 
-[![ci](https://github.com/sparkainlp-x/pilottrace-nav-replay/actions/workflows/ci.yml/badge.svg)](https://github.com/sparkainlp-x/pilottrace-nav-replay/actions/workflows/ci.yml)
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
-[![Status: research prototype](https://img.shields.io/badge/status-research%20prototype-orange.svg)](#boundaries)
-
 A deterministic, **fully SYNTHETIC** software replay of GNSS-denied maritime navigation. Navigation residuals are mapped explicitly into OES-32 blocks and OES-512 (16 × 32) frames, then scored and evidenced through the existing, unmodified [`sparkainlp-x/pilottrace`](https://github.com/sparkainlp-x/pilottrace) package. Every run writes a hash-chained provenance manifest and an evidence report.
 
 ## Boundaries
